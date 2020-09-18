@@ -142,10 +142,6 @@ namespace Bar
                 string plainText = Encoding.ASCII.GetString(plainT_Data, 0, plainT_Data.Length / 2);//转码成文字
                 return plainText;
             }
-
-           
-
-
         }
     }
 }
