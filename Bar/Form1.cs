@@ -87,7 +87,7 @@ namespace Bar
                 bt = qrCodeEncoder.Encode(enCodeString, Encoding.UTF8);
                 //二维码图片名称
                 string filename =  strName + "-" + DateTime.Now.ToString("D");
-                //保存二维码图片在photos路径下
+                //保存二维码图片在自定义路径下
                 bt.Save(@"D:\开发\NET Framework and C#\Data\QRCoder_image\" + filename+".jpg");
                 //图片控件显示的二维码
                 pictureBox1.Image = bt;
@@ -142,6 +142,10 @@ namespace Bar
                 string plainText = Encoding.ASCII.GetString(plainT_Data, 0, plainT_Data.Length / 2);//转码成文字
                 return plainText;
             }
+
+           
+
+
         }
     }
 }
